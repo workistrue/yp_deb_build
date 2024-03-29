@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+PKGDIR=debian/tmp
+
+export PYBUILD_NAME = yo
+
+%:
+	dh $@ --with systemd
+
+clean:
+	../clean.sh
+
+build:
+	../build.sh
+
+install:
+	env DESTDIR=debian/yo ../install.sh

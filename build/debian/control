@@ -1,0 +1,11 @@
+Source: yo
+Section: python
+Priority: optional
+Maintainer: Name <name@email.me>
+Build-Depends: build-essential, debhelper, dh-python, python3-all, python3-setuptools
+
+
+Package: yo
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: cow say yo
